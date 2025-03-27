@@ -79,12 +79,12 @@
     font-size: 2rem;
     font-weight: bold;
     padding: 2%;
-    /* background: linear-gradient(90deg, #1A3D2F, #D4AF37, #1A3D2F);
+    background: linear-gradient(90deg, #1A3D2F, #D4AF37, #1A3D2F);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: metallicShine 3s infinite linear; */
+    animation: metallicShine 3s infinite linear;
 }
   
   

@@ -131,6 +131,43 @@
     font-size: 20px;
     padding: 10px;
   }
+
+    /* --- Bouton Accueil centré --- */
+    button {
+      display: block;
+      margin: 40px auto;
+      margin-bottom: 100px;
+      padding: 15px 25px;
+      font-size: 20px;
+      background-color: #1A3D2F;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    button:hover {
+      background-color: #134a3a;
+    }
+
+    .footer{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+    }
+    
+    .footer-link {
+      color: white;
+      text-decoration: none;
+    }
+    
   
   /* --- Mode tablette : 2 colonnes --- */
   @media (max-width: 900px) {
@@ -150,23 +187,5 @@
     .block {
         height: 300px;
     }
-  }
-  
-  /* --- Bouton Accueil centré --- */
-  button {
-    display: block;
-    margin: 40px auto;
-    padding: 15px 25px;
-    font-size: 20px;
-    background-color: #1A3D2F;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #134a3a;
   }
   
