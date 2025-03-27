@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    background-color: #F5F0E1; /* Beige doux pour une ambiance naturelle et élégante */
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 250px;
+    object-fit: fill;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    border: 3px solid #D4AF37; /* Doré pour un effet raffiné */
+  }
+  
+  .paris-bijoux {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background-color: #1A3D2F; /* Doré pour évoquer le luxe */
+    border: 3px solid #D4AF37; /* Gris anthracite pour un contraste élégant */
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #1A3D2F, #D4AF37, #1A3D2F);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: metallicShine 3s infinite linear;
+  }
+  
+  @keyframes metallicShine {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+  
+  
+  .navbar {
+    background-color: #1A3D2F; /* Vert émeraude profond */
+    border: 1px solid #D4AF37; /* Doré pour encadrer la navigation */
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #D4AF37; /* Effet doré au survol */
+  }
+  
+  
+  ul {
+      display: flex;
+      justify-content:flex-end;
+      font-size: large;
+      gap: 20px;
+      list-style: none;
+      margin-right: 50px;
+  }
+
+  /* --- Conteneur des blocs alignés par 3 --- */
+.all-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px; /* Espacement plus grand */
+    width: 90%; /* Élargir un peu la zone */
+    max-width: 1400px; /* Augmenter la largeur max */
+    margin: 30px auto;
+  }
+  
+  /* --- Style des blocs individuels --- */
+  .block {
+    background: #F5F0E1;
+    text-align: center;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adapter à la grille */
+    height: 500px; /* taille de la hauteur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* --- Images dans les blocs --- */
+  .block img {
+    width: 80%; /* Ajuster la largeur */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #1A3D2F, #D4AF37, #1A3D2F);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: metallicShine 3s infinite linear;
+  }
+
+  .bracelets{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  /* --- Mode tablette : 2 colonnes --- */
+  @media (max-width: 900px) {
+    .all-blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block {
+        height: 350px; /* Ajuster la hauteur */
+    }
+  }
+  
+  /* --- Mode mobile : 1 colonne --- */
+  @media (max-width: 600px) {
+    .all-blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .block {
+        height: 300px;
+    }
+  }
+  
+  /* --- Bouton Accueil centré --- */
+  button {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: #1A3D2F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #134a3a;
+  }
+  

@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    background-color: #F5F0E1; /* Couleur de fond */
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 250px;
+    object-fit: fill;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    border: 3px solid #D4AF37; /* Doré pour un effet raffiné */
+  }
+  
+  .paris-bijoux {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background-color: #1A3D2F;
+    border: 3px solid #D4AF37; 
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #1A3D2F, #D4AF37, #1A3D2F);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: metallicShine 3s infinite linear;
+  }
+  
+  @keyframes metallicShine {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+/* --- Style de la navbar --- */
+.menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #1A3D2F;
+    border: 1px solid #D4AF37;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+    gap: 0px;
+    list-style: none;
+    margin-right: 50px;
+    position: relative;
+}
+
+.menu li{
+    text-decoration: none;
+    /* color: yellow; */
+    display: block;
+    padding: 0px;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.menu a:hover {
+    color: #D4AF37;
+  }
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #00800098;
+    width: max-content;
+}
+
+.dropdown-content li a:hover{
+    background: #1A3D2F;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* --- Carrousel --- */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Conteneur des images */
+  .carousel-container {
+    display: flex;
+    width: 200%;
+  }
+  
+  /* Ligne d'images */
+  .carousel-slide {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: infinite-scroll 20s linear infinite;
+  }
+  
+  /* Images */
+  .carousel-slide img {
+    width: 16.66%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Animation continue */
+  @keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* --- Arrêt de l'animation au survol --- */
+  .carousel:hover .carousel-slide {
+    animation-play-state: paused;
+  }
+  
+  /* --- Boutons de navigation --- */
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* --- Trois blocs côte à côte --- */
+  .three-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 60%;
+    margin: 50px auto;
+  }
+  
+  .block {
+    width: 25%;
+    background: #F5F0E1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .block img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .block p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1A3D2F;
+  }
+  
+  /* --- Conteneur des blocs alignés par 3 --- */
+  .all-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px; /* Espacement plus grand */
+    width: 90%; /* Élargir un peu la zone */
+    max-width: 1400px; /* Augmenter la largeur max */
+    margin: 30px auto;
+  }
+  
+  /* --- Style des blocs individuels --- */
+  .block {
+    background: #F5F0E1;
+    text-align: center;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adapter à la grille */
+    height: 500px; /* taille de la hauteur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* --- Images dans les blocs --- */
+  .block img {
+    width: 80%; /* Ajuster la largeur */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+  
+  /* --- Mode tablette : 2 colonnes --- */
+  @media (max-width: 900px) {
+    .all-blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block {
+        height: 350px; /* Ajuster la hauteur */
+    }
+  }
+  
+  /* --- Mode mobile : 1 colonne --- */
+  @media (max-width: 600px) {
+    .all-blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .block {
+        height: 300px;
+    }
+  }
+  
+  /* --- Bouton Accueil centré --- */
+  button {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: #1A3D2F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #134a3a;
+  }
